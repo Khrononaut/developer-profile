@@ -1,0 +1,44 @@
+section {
+    border: #B2B1B9 solid 8px;
+    border-radius: 16px;
+    padding: 32px;
+}
+
+section > h3 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.sct-hdg-1 {
+    color: #c2c2c7;
+    font-size: 32px;
+    letter-spacing: .1em;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.sct-hdg-2 {
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    font-family: 'Space Mono', monospace;
+}
+
+.hashtag {
+    margin-left: 4px;
+    font-size: 1.8em;
+}
+
+hr {
+    border-style: solid;
+    border-radius: 8px;
+    border-width: 4px;
+    margin: 0 0 32px 0;
+    position: relative;
+    top: 8px;
+}
