@@ -3,8 +3,7 @@
  <head>
   <title></title>
   <link rel="stylesheet" href="./styles/style.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <script src="script.js" defer></script>
+  <script src="https://kit.fontawesome.com/2277de3183.js" crossorigin="anonymous"></script>
  </head>
  <body>
    <header>
@@ -13,12 +12,16 @@
    </header>
 
    <section class="sct-about">
-     <h3><span class="sct-hdg-1">Who is Wilhelm Felk?</span><br><span class="sct-hdg-2">About<span class="hashtag">#</span></span></h3>
-     <hr>
+     <div class="ctr-hdg">
+       <h3><span class="sct-hdg-1">Who I am</span><span class="sct-hdg-2">About<span class="hashtag">#</span></span></h3>
+       <hr>
+     </div>
      <div class="fxc-row ctr-about">
        <img class="img-about" src="./assets/wilhelm-felk.png" alt="a photo of the web developer Wilhelm Felk">
        <div class="fxc-col about-profile">
-         <div class="fxc-row details">
+         <p><span class="greeting">Hello visitor!</span><br>I'm a first cohort participant in the <a href="https://dev.getmimo.com/" target="_blank">Mimo Dev courses</a>. With diligence and keensess, I work on my developer's skills including <em>JavaScript, CSS and React</em>.
+          It's a stony path to stride on, but I always have my goal in sight: becoming a <b>full-stack web developer</b>.</p>
+          <div class="fxc-row details">
            <div class="fxc-row dev-icons">
              <span class="material-icons md-64">html</span>
              <span class="material-icons md-64">css</span>
@@ -39,13 +42,38 @@
             </tr>
           </table>
           </div>
-        <p><span class="greeting">Hello visitor!</span><br>I'm a first cohort participant in the <a href="https://dev.getmimo.com/" target="_blank">Mimo Dev courses</a>. With diligence and keensess, I work on my developer's skills including <em>JavaScript, CSS and React</em>.
-        It's a stony path to stride on, but I always have my goal in sight: to become a <b>full-stack web developer</b>.</p>
        </div>
      </div>
    </section>
    <section class="sct-projects">
-     <h3 class="hdg-projects"><span class="sct-hdg-1">What has he developed?</span><br><span class="sct-hdg-2">Projects<span class="hashtag">#</span></span></h3>
+     <div class="ctr-hdg">
+       <h3 class="hdg-projects"><span class="sct-hdg-1">What I have developed</span><br><span class="sct-hdg-2">Projects<span class="hashtag">#</span></span></h3>
+       <hr>
+     </div>
+     <div class="projects">
+       <article class="crd-project">
+         <figure class="transcript-iron">
+           <img src="./assets/projects-screenshots/transcript-iron.jpg">
+           <figcaption>
+             <h4>Transcript iron</h4>
+             <div class="project-icons">
+               <a href="https://khrononaut.github.io/transcript-iron/" target="_blank"><i class="fa-solid fa-lg fa-eye"></i></a>
+               <a href="https://github.com/Khrononaut/transcript-iron" target="_blank"><i class="fa-brands fa-lg fa-github"></i></a>
+             </div>
+           </figcaption>
+          </figure>
+        <details>
+          <summary>
+           Streamlining "creased" auto-generated transcripts for further editing
+          </summary>
+          <p>Once, I did an internship at an editorial department. There, the journalists rely on auto-generated transcripts from interviews or presentation for their enquiry. 
+            These auto-generated transcripts are dozen of pages long and contain a lot of blank lines, fillers, and other unnecessary characters.</p>
+            <br>
+           <p>To reduce the journalists' work, I wrote a program that <strong>removes blank lines and fillers, capitalise letters after periods and i's</strong>. 
+           The program saves around 45 minutes of the journalists' time. And, it supplies them with a neat and <em>ironed</em> transcript which is ready for further editing.</p>
+        </details>
+      </article>
+     </div>
    </section>
  </body>
 </html>

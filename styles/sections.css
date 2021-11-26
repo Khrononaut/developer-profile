@@ -4,12 +4,19 @@ section {
     padding: 32px;
 }
 
-section > h3 {
+section h3 {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+}
+
+.ctr-hdg {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+    justify-content: center;
 }
 
 .sct-hdg-1 {

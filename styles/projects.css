@@ -1,6 +1,114 @@
 .sct-projects {
-    background-color: #3D0000;
+    background-color: #5C527F;
+    z-index: 2;
+    position: sticky;
+    bottom: 0;
+    box-shadow:
+    0px -16px 1.5px rgba(0, 0, 0, 0.124),
+    0px -16px 3.7px rgba(0, 0, 0, 0.178),
+    0px -16px 7px rgba(0, 0, 0, 0.22),
+    0px -16px 12.5px rgba(0, 0, 0, 0.262),
+    0px -16px 23.4px rgba(0, 0, 0, 0.316),
+    0px -16px 56px rgba(0, 0, 0, 0.44);
+}
+
+.sct-projects .sct-hdg-2 {
+    color: #261C2C;
+}
+
+.sct-projects hr {
+    border-color: #261C2C;
+}
+
+.projects {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 16px;
+}
+
+.crd-project {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
+    background-color: #6E85B2;
+    color: #261C2C;
+    border: 2px solid #261C2C;
+    border-radius: 8px;
+    padding: 16px;
+    max-width: auto;
+}
+
+figure {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    position: relative;
+    height: 328px;
+    border: 2px solid black;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+figure img {
+    height: 100%;
+}
+
+figcaption {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
     align-items: center;
+    padding: 16px;
+    background-color: rgba(110, 133, 178, .75);
+    color: white;
+    text-transform: uppercase;
+    font-size: 3rem;
+    letter-spacing: .25rem;
+    box-shadow:
+    0px -1rem 1.5px rgba(0, 0, 0, 0.124),
+    0px -1rem 3.7px rgba(0, 0, 0, 0.178),
+    0px -1rem 7px rgba(0, 0, 0, 0.22),
+    0px -1rem 12.5px rgba(0, 0, 0, 0.262),
+    0px -1rem 23.4px rgba(0, 0, 0, 0.316),
+    0px -1rem 56px rgba(0, 0, 0, 0.44);
+}
+
+h4 {
+    text-shadow: 0px 2px 2px black;
+}
+
+i {
+    color: rgba(255, 255, 255, 0.6);
+    transition: all .25s;
+}
+
+i:hover {
+    color: rgba(255, 255, 255, 1);
+    transform: scale(1.25);
+}
+
+details {
+    font-size: 2rem;
+    margin-top: 2rem;
+    padding: 1rem;
+    transition: all .5s;
+}
+
+summary {
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+details[open] summary ~ * {
+    animation: sweep .5s ease-in-out;
+}
+  
+@keyframes sweep {
+    0%    {opacity: 0; margin-left: -10px}
+    100%  {opacity: 1; margin-left: 0px}
 }

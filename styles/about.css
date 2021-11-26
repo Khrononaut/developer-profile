@@ -1,25 +1,34 @@
 .sct-about {
     background-color: #346799;
+    z-index: 1;
+    box-shadow:
+    0px -16px 1.5px rgba(0, 0, 0, 0.124),
+    0px -16px 3.7px rgba(0, 0, 0, 0.178),
+    0px -16px 7px rgba(0, 0, 0, 0.22),
+    0px -16px 12.5px rgba(0, 0, 0, 0.262),
+    0px -16px 23.4px rgba(0, 0, 0, 0.316),
+    0px -16px 56px rgba(0, 0, 0, 0.44);
 }
 
 .sct-about .sct-hdg-2 {
-    color: #2B3453;
+    color: #261C2C;
 }
 
 .sct-about hr {
-    border-color: #2B3453;
+    border-color: #261C2C;
 }
 
 .ctr-about {
     align-items: center;
+    margin-bottom: 160px;
 }
 
 .img-about {
     border-radius: 50%;
-    border: #2B3453 solid 8px;
+    border: #261C2C solid 8px;
     filter: grayscale(1.5);
-    height: 100%;
-    width: auto;
+    width: 30%;
+    
 }
 
 .about-profile {
@@ -28,9 +37,20 @@
     justify-content: space-evenly;
 }
 
+.about-profile > p {
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.greeting {
+    font-style: italic;
+    font-size: 32px;
+}
+
 .details {
     justify-content: space-evenly;
     align-items: center;
+    margin-top: 40px;
 }
 
 .details > table {
@@ -40,7 +60,7 @@
 }
 
 .details tr {
-    border-bottom: #2B3453 3px solid;
+    border-bottom: #261C2C 3px solid;
 }
 
 #no-border-bottom {
@@ -48,7 +68,7 @@
 }
 
 .details th {
-    color: #2B3453;
+    color: #261C2C;
     font-family: 'Space Mono', monospace;
 }
 
@@ -65,15 +85,4 @@
 
 .material-icons {
     font-size: 64px;
-}
-
-.about-profile > p {
-    line-height: 1.5;
-    text-align: justify;
-    margin-top: 40px;
-}
-
-.greeting {
-    font-style: italic;
-    font-size: 32px;
 }
