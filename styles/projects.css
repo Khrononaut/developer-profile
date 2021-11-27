@@ -1,8 +1,6 @@
 .sct-projects {
     background-color: #5C527F;
     z-index: 2;
-    position: sticky;
-    bottom: 0;
     box-shadow:
     0px -16px 1.5px rgba(0, 0, 0, 0.124),
     0px -16px 3.7px rgba(0, 0, 0, 0.178),
@@ -82,12 +80,12 @@ h4 {
     text-shadow: 0px 2px 2px black;
 }
 
-i {
+.project-icons i {
     color: rgba(255, 255, 255, 0.6);
     transition: all .25s;
 }
 
-i:hover {
+.project-icons i:hover {
     color: rgba(255, 255, 255, 1);
     transform: scale(1.25);
 }

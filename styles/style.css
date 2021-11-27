@@ -9,12 +9,6 @@
     padding: 0;
 }
 
-.material-icons.md-18 { font-size: 18px; }
-.material-icons.md-24 { font-size: 24px; }
-.material-icons.md-36 { font-size: 36px; }
-.material-icons.md-48 { font-size: 48px; }
-.material-icons.md-64 { font-size: 64px; color: #2B3453;}
-
 html {
     font-size: 8px;
     font-family: 'Work Sans', sans-serif;
@@ -48,10 +42,14 @@ h1, h2 {
 
 .fxc-row {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
 }
 
 .fxc-col {
     display: flex;
     flex-flow: column wrap;
+}
+
+#nowrap {
+    flex-wrap: nowrap;
 }
